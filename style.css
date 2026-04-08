@@ -1,0 +1,251 @@
+@import url(http://fonts.googleapis.com/css?family=Tangerine);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0x 150px;
+  -ms-transform-origin: 0x 150px;
+  transform-origin: 0x 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
+}
+
+.colortext .anim-shape:nth-child(1) {
+  fill: #0E1826;
+}
+
+.colortext .anim-shape:nth-child(2) {
+  fill: #166973;
+}
+
+.colortext .anim-shape:nth-child(3) {
+  fill: #65BFA6;
+}
+
+.colortext .anim-shape:nth-child(4) {
+  fill: #F2CD5C;
+}
+
+.colortext .anim-shape:nth-child(5) {
+  fill: #F26444;
+}
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+
+/* Other stuff */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #EEE;
+  overflow-x:hidden;
+  /*font-family: 'Tangerine', serif;
+  font-size:130px;*/
+}
+
+svg{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Tangerine', serif;
+  font-size:130px;
+}
+
+.footer{
+    position: relative;
+    right:0;
+    bottom:0;
+    left:0;
+    padding: 1rem;
+    text-align: center;
+    font-family:'Open Sans',sans-serif;
+    font-size:14px;
+    font-style:italic;
+    height:100%;
+    width:100%;
+    clear:left;
+}
+.gallery{
+    font-family:'Tangerine',serif;
+    position:relative;
+}
+
+#topbtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index:99;
+    height:5%;
+    width:5%;
+}
+
+.carousel-inner{
+    max-width:500px; !important;
+    max-height:500px !important;
+}
+.house,.office{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 0px;
+    font-style: italic;
+    text-align:center;
+}
+
+.contact{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    float:left;
+    margin-left:11%;
+    margin-right:11%;
+    padding-left: 1%;
+    padding-right:1%;
+    border: 1px solid gray;
+    background:#d6d6d6;
+    margin-top:17vh;
+}
+
+.house-grid,.office-grid{
+    width: 80%;
+    margin: 0 auto;
+}
+.card-meta {
+    height:30px;
+}
+.card {
+    float:left;
+    width:25%;
+}
+.card-img-container {
+    position:relative;
+    padding-top:77%;
+    margin: 5%;
+}
+.card-img, .card-img-office {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.glyphicon
+{
+    font-size:50px;
+}
+.modal-content{
+    margin-top:15vh;
+}
+#carousel-example-generic-house, #carousel-example-generic-office{
+    background-color:#000000;
+}
+
+.large-space{
+    height:40vh;
+    clear:left;
+}
+
+.info-area {
+    margin:0;
+    width:100%;
+    height:100%;
+    margin-top:15vh;
+}
+
+.bgimg1 {
+    background:url("assets/images/living_room.jpg");
+    float:left;
+    margin-left:2vw;
+}
+
+.bgimg2 {
+    background:url("assets/images/bedroom.jpg");
+    float:right;
+    margin-right:2vw;
+}
+.bgimg3 {
+    background:url("assets/images/kitchen.jpg");
+    float:left;
+    margin-left:2vw;
+}
+
+
+.bgimg1, .bgimg2, .bgimg3 {
+    /*background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:100% auto;*/
+    width:85vw;
+    height:85vh;
+}
+
+#bgimg {
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+}
+
+
+
+@media only screen and (max-device-width: 768px) {
+    #bgimg {
+        background-attachment: scroll;
+    }
+}
+
+.writing {
+    margin:0;
+    width:100%;
+    height:100%;
+    margin-top:5vh;
+    background-image:url("assets/images/living_room4.jpg");
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    overflow:hidden;
+    display:table;
+}
+
+.tint {
+    background:#44474b;
+    opacity:0.8;
+    height:100%;
+    width:100%;
+    margin:0;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
+.fadein{
+    color:#FFF;
+    font-family:'Open Sans',sans-serif;
+    font-size:16px;
+    font-style:italic;
+    /*padding-bottom:30px;
+    margin-left:20vw;
+    margin-right:20vw;
+    position:relative;
+    text-align: center;*/
+    display:inline-block;
+    text-align:center;
+    margin-left:20vw;
+    margin-right:20vw;
+}
+
+
